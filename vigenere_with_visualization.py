@@ -1,11 +1,11 @@
 import PySimpleGUI as sg
-from vigenere import cipher
+from vigenere import generator_cipher as cipher
 
 sg.theme('DarkAmber')   # Add a touch of color
 # All the stuff inside your window.
 layout = [  [sg.Text('Vigenere Cipher')],
             [sg.Text('Input Text'), sg.InputText(key="input")],
-            [sg.Text('Key'), sg.InputText(key="key")],
+            [sg.Text('key'), sg.InputText(key="key")],
             [sg.Text('Encrypt or Decrypt'), sg.InputText(key="option")],
             [sg.Button('Ok'), sg.Button('Cancel')] ]
 
@@ -18,5 +18,7 @@ while True:
         break
     if event == 'Ok':
       print(values["option"])
+      generator = cipher(values['key'], values['input'], values['option'])
+      print(next(generator))
 
 window.close()
