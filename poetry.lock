@@ -1,4 +1,12 @@
 [[package]]
+name = "m3-pil"
+version = "1.1.7"
+description = "Python Imaging Library"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "numpy"
 version = "1.22.2"
 description = "NumPy is the fundamental package for array computing with Python."
@@ -17,9 +25,12 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8.0,<3.9"
-content-hash = "c6d0fc21ddb2e16ee879faefba6d926fbe6dcc30c92c743cca082c5d02e0c8cf"
+content-hash = "e91b9ba60c0fdb99dfcba74d5e86e991ce62ae87488d7f1017ed8b40fddde39b"
 
 [metadata.files]
+m3-pil = [
+    {file = "m3-PIL-1.1.7.tar.gz", hash = "sha256:6fa22ea56598921ad7d4687fc276dcad975c4ae26161d9c22ad4c58ad022a658"},
+]
 numpy = [
     {file = "numpy-1.22.2-cp310-cp310-macosx_10_14_x86_64.whl", hash = "sha256:515a8b6edbb904594685da6e176ac9fbea8f73a5ebae947281de6613e27f1956"},
     {file = "numpy-1.22.2-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:76a4f9bce0278becc2da7da3b8ef854bed41a991f4226911a24a9711baad672c"},
